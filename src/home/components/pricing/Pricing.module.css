@@ -1,0 +1,106 @@
+.Text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  line-height: 52px;
+}
+.Container {
+  background-color: black;
+}
+.GroupOuter {
+  flex-direction: column;
+  margin-bottom: 8rem;
+}
+.Card {
+  background-color: #020710;
+  border: 1px solid #348ff899;
+  border-radius: 25px;
+}
+
+.MiddleCard {
+  background-color: #020710;
+  border: 2px solid #348ff8;
+  border-radius: 25px;
+}
+.CardSection {
+  background-color: #348ff8;
+  border: 2px solid #348ff8;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Divider {
+  width: 205px;
+  align-self: center;
+  height: 0.5px;
+  border-color: #348ff899;
+}
+.Button {
+  border: 3px solid #348ff8;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.Title1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 39px;
+  color: #348ff8;
+}
+.Title2 {
+  font-family: "Roboto", sans-serif;
+  opacity: 0.7;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #eaeaea;
+}
+.Title3 {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26px;
+}
+.Title3Span {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 85px;
+  font-weight: 500;
+  line-height: 110px;
+  margin-left: 15px;
+}
+.subTitle3 {
+  color: #348ff8;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.Text1 {
+  color: #eaeaea;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.TextSpan {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+}
