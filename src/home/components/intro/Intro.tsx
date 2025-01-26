@@ -1,6 +1,5 @@
 import { Box, Group, Button, Container, Text, Image } from "@mantine/core";
 import css from "./Intro.module.css";
-import Header from "../../../shared/components/header/Header";
 import { data } from "./data.ts";
 import cloud from "../../../assets/cloud.png";
 import shield from "../../../assets/shield.png";
@@ -10,7 +9,6 @@ import graph from "../../../assets/graph.png";
 const Intro = () => {
   return (
     <Box className={css.Box}>
-      <Header />
       <Container className={css.Container}>
         <Image w={91} src={cloud} className={css.FloatCloud} />
         <Image w={112} src={cloud} className={css.FloatCloud2} />

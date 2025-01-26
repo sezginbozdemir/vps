@@ -1,5 +1,3 @@
-import FooterMid from "../shared/components/footer/footer-mid/FooterMid";
-import FooterTop from "../shared/components/footer/footer-top/FooterTop";
 import Info from "./components/info/Info";
 import Intro from "./components/intro/Intro";
 import Pricing from "./components/pricing/Pricing";
@@ -11,8 +9,6 @@ const HomePage = () => {
       <Pricing />
       <Info />
       <TextBlock />
-      <FooterTop />
-      <FooterMid />
     </>
   );
 };

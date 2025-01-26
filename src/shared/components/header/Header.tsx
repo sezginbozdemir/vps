@@ -14,17 +14,17 @@ function Header() {
           <Group justify="space-between" h="100%">
             <Image src={logo} w="auto" h={30} fit="contain" />
             <Group h="100%" gap={30} visibleFrom="sm">
-              <a href="#" className={css.Link}>
+              <a href="/" className={css.Link}>
                 Acasă
               </a>
 
-              <a href="#" className={css.Link}>
+              <a href="/solutions" className={css.Link}>
                 Soluții
               </a>
-              <a href="#" className={css.Link}>
+              <a href="/prices" className={css.Link}>
                 Prețuri
               </a>
-              <a href="#" className={css.Link}>
+              <a href="/contact" className={css.Link}>
                 Contact
               </a>
               <Button

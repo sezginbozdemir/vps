@@ -7,3 +7,6 @@
   width: 100%;
   background-color: black;
 }
+.m_3f35ae96:where([data-rotate]) {
+  transform: rotate(90deg) !important;
+}
