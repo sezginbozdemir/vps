@@ -1,8 +1,9 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import HomePage from "./home/HomePage";
-import Solutions from "./solutions/Solutions";
 import Footer from "./shared/components/footer/Footer";
 import Header from "./shared/components/header/Header";
+import Vps from "./solutions/vps/Vps";
+import AdditionalSpace from "./solutions/additional-space/AdditionalSpace";
 
 const AppRouter = () => {
   return (
@@ -10,7 +11,8 @@ const AppRouter = () => {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/solutions" element={<Solutions />} />
+        <Route path="/vps" element={<Vps />} />
+        <Route path="/additional-space" element={<AdditionalSpace />} />
       </Routes>
       <Footer />
     </BrowserRouter>

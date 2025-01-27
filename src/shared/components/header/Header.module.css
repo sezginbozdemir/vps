@@ -19,6 +19,24 @@
   font-size: 20px;
   color: #ffffff;
   text-decoration: none;
+  cursor: pointer;
   @media (max-width: 992px) {
   }
+}
+
+.MenuTitle {
+  color: #081a30;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.MenusubTitle {
+  color: #348ff899;
+  opacity: 0.6;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
 }

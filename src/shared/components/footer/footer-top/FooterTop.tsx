@@ -1,12 +1,4 @@
-import {
-  Group,
-  Image,
-  Box,
-  Button,
-  Container,
-  Stack,
-  Text,
-} from "@mantine/core";
+import { Image, Box, Button, Container, Stack, Text } from "@mantine/core";
 import css from "./FooterTop.module.css";
 import MacBook from "../../../../assets/macbook.png";
 

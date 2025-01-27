@@ -1,0 +1,75 @@
+.Card {
+  background-color: #020710;
+  border: 2px solid #25282d;
+  border-radius: 12px;
+  padding: 10px 32px;
+}
+
+.Title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.Paragraph {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: #eaeaea;
+}
+
+.List {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: #eaeaea;
+}
+.List li {
+  overflow-wrap: break-word;
+}
+.Button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  border: 3px solid #348ff8;
+  border-radius: 100px;
+}
+.Divider {
+  color: #ffffff99;
+  height: 0.5px;
+  opacity: 0.6;
+}
+.BottomTitle {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 52px;
+  color: #ffffff;
+}
+.BottomText {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 32px;
+  color: #ffffff;
+}
+.BottomTextSpan {
+  font-weight: 300;
+}
+.BottomTitleSpan {
+  font-weight: 300;
+}
+.BottomBox {
+  margin-top: 5rem;
+  background-image: url("/backgrounds/bottom-info.png");
+  width: 100%;
+  height: 80vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
