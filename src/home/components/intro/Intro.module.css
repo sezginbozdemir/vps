@@ -1,15 +1,16 @@
 .Box {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0) 80%,
-      rgba(0, 0, 0, 1) 100%
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 68%
     ),
     url("/backgrounds/background-1.png");
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .Group {
@@ -18,69 +19,119 @@
   align-items: baseline;
 }
 
-.Group2 {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  align-content: center;
-}
-
-.Group2Inner {
+.GridCol {
+  display: flex;
   flex-direction: column;
-  overflow: hidden;
-  width: 200px;
   align-items: center;
-  align-self: start;
+  gap: 15px;
   text-align: center;
 }
 .Container {
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .FloatCloud {
   position: absolute;
   top: 40%;
-  left: 0%;
+  left: 20%;
+  @media (max-width: 767px) {
+    top: 26%;
+    left: 5%;
+  }
+  @media (max-width: 480px) {
+    top: 31%;
+    width: 60px !important;
+  }
 }
 .FloatCloud2 {
   position: absolute;
-  top: 33%;
-  left: 70%;
+  top: 30%;
+  left: 63%;
+  @media (max-width: 767px) {
+    top: 22%;
+    left: 55%;
+  }
+  @media (max-width: 480px) {
+    width: 60px !important;
+  }
 }
 
 .FloatShield {
   position: absolute;
   top: 40%;
-  left: 85%;
+  left: 74%;
+  @media (max-width: 767px) {
+    top: 31%;
+    left: 66%;
+  }
+  @media (max-width: 480px) {
+    width: 60px !important;
+  }
 }
 .FloatShield2 {
   position: absolute;
   top: 32%;
-  right: -15%;
+  right: 10%;
+  @media (max-width: 767px) {
+    top: 26%;
+  }
+  @media (max-width: 480px) {
+    width: 60px !important;
+  }
 }
 .FloatLightning {
   position: absolute;
   top: 37%;
-  left: 37%;
+  left: 40%;
+  @media (max-width: 767px) {
+    top: 24%;
+    left: 23%;
+  }
+  @media (max-width: 480px) {
+    width: 60px !important;
+    top: 29%;
+  }
 }
 .FloatLightning2 {
   position: absolute;
   top: 25%;
-  left: 90%;
+  left: 76%;
+  @media (max-width: 767px) {
+    top: 18%;
+  }
+  @media (max-width: 480px) {
+    width: 60px !important;
+  }
 }
 .FloatGraph {
   position: absolute;
   top: 23%;
-  left: 50%;
+  left: 47%;
+  @media (max-width: 767px) {
+    top: 17%;
+  }
+  @media (max-width: 480px) {
+    width: 60px !important;
+  }
 }
 .FloatGraph2 {
   position: absolute;
   top: 45%;
-  left: 60%;
+  left: 55%;
+  @media (max-width: 767px) {
+    top: 30%;
+    left: 40%;
+  }
+  @media (max-width: 480px) {
+    width: 60px !important;
+  }
 }
 
 .MarginTop {
   margin-top: 3rem;
+  @media (max-width: 992px) {
+    margin-top: 0px;
+  }
 }
 
 .Title {
@@ -106,11 +157,27 @@
   color: #ffffff;
   margin-top: 1.5rem;
   line-height: 104px;
+  @media (max-width: 767px) {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  @media (max-width: 480px) {
+    font-size: 32px;
+    line-height: 41px;
+  }
 }
 .span {
   font-weight: 300;
   font-size: 80px;
   color: #ffffff;
+  @media (max-width: 767px) {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  @media (max-width: 480px) {
+    font-size: 32px;
+    line-height: 41px;
+  }
 }
 
 .Text2 {
@@ -137,4 +204,15 @@
   color: #348ff8;
   font-weight: 500;
   font-size: 20px;
+}
+.Button {
+  border-radius: 100px;
+  border: 3px solid rgba(52, 143, 248, 1);
+  background-color: rgba(52, 143, 248, 1);
+  height: 52px;
+}
+
+.Button:hover {
+  border: 3px solid rgba(52, 143, 248, 0.6);
+  background-color: rgba(2, 7, 16, 1);
 }

@@ -13,22 +13,37 @@
 .Container {
   background-color: black;
 }
-.GroupOuter {
-  flex-direction: column;
-  margin-bottom: 8rem;
-}
 .Card {
   background-color: #020710;
   border: 1px solid #348ff899;
   border-radius: 25px;
+  height: 100%;
 }
 
 .MiddleCard {
+  height: 100%;
   background-color: #020710;
   border: 2px solid #348ff8;
   border-radius: 25px;
 }
+.Col {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.MiddleCol {
+  display: flex;
+  align-items: flex-end;
+  margin-top: -40px;
+  justify-content: center;
+
+  @media (max-width: 767px) {
+    margin-top: 0px;
+  }
+}
 .CardSection {
+  margin-bottom: 15px;
   background-color: #348ff8;
   border: 2px solid #348ff8;
   color: #ffffff;
@@ -47,13 +62,33 @@
   height: 0.5px;
   border-color: #348ff899;
 }
-.Button {
-  border: 3px solid #348ff8;
+.ButtonFilled {
+  border: 3px solid rgba(52, 143, 248, 1);
+  background-color: rgba(52, 143, 248, 1);
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
+  border-radius: 100px;
+}
+
+.ButtonFilled:hover {
+  background-color: rgba(2, 7, 16, 1);
+}
+
+.ButtonOutline {
+  border: 3px solid rgba(52, 143, 248, 1);
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  border-radius: 100px;
+}
+.ButtonOutline:hover {
+  background-color: rgba(52, 143, 248, 0.6);
 }
 
 .Title1 {

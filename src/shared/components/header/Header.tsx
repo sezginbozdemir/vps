@@ -96,10 +96,10 @@ function Header() {
                 Contact
               </a>
               <Button
+                radius="xl"
+                variant="outline"
                 className={css.Button}
                 size="lg"
-                variant="outline"
-                radius="xl"
               >
                 LOG IN
               </Button>
