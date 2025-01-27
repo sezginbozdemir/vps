@@ -7,6 +7,9 @@
   margin-bottom: 4rem;
   line-height: 52px;
 }
+.NoDisplay {
+  display: none;
+}
 .Container {
   background-color: black;
 }

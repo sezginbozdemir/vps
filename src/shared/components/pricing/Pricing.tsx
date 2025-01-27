@@ -9,12 +9,15 @@ import {
 } from "@mantine/core";
 import css from "./Pricing.module.css";
 import data from "./data.ts";
-
+import { useLocation } from "react-router-dom";
 const Pricing = () => {
+  const location = useLocation();
+  const TextClassName =
+    location.pathname !== "/" ? `${css.Text} ${css.NoDisplay}` : css.Text;
   return (
     <Container className={css.Container}>
       <Group className={css.GroupOuter} justify="center" align="center">
-        <Text className={css.Text}>Cumpără un plan de Hosting VPS</Text>
+        <Text className={TextClassName}>Cumpără un plan de Hosting VPS</Text>
         <Group gap={20} w="100%" h="100%" justify="center" align="end">
           {data.map((plan, index) => (
             <Card

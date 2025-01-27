@@ -1,0 +1,184 @@
+.SelectText {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: rgba(234, 234, 234, 1);
+}
+.SelectRoot {
+  width: 70%;
+  margin-top: 1rem;
+}
+.SelectInput {
+  border-radius: 12px;
+
+  border: 2px solid rgba(37, 40, 45, 1);
+  background-color: rgba(2, 7, 16, 1);
+  color: rgba(255, 255, 255, 1);
+  height: 60px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.SelectDropdown {
+  background-color: rgba(2, 7, 16, 1);
+  border: 2px solid rgba(37, 40, 45, 1);
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 1);
+  padding: 0;
+}
+.SelectOption {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  padding: 19px 19px;
+}
+.SelectOption:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.SelectOption:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.SelectOption:only-child {
+  border-radius: 10px;
+}
+
+.SelectOption[data-checked="true"] {
+  background-color: rgba(52, 143, 248, 0.6);
+}
+.SelectOption:active {
+  background-color: rgba(52, 143, 248, 0.6);
+}
+.SelectOption:hover {
+  background-color: rgba(52, 143, 248, 0.4);
+}
+.PriceCard {
+  width: 100%;
+  height: 100%;
+  padding: 21px 33px 21px 33px;
+  border-radius: 12px;
+  border: 2px solid rgba(37, 40, 45, 1);
+  background-color: rgba(2, 7, 16, 1);
+}
+
+.TableTitle {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 32.5px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.HighlightedContent {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.TableContent {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: rgba(234, 234, 234, 1);
+}
+.PriceSpan {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46.8px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgba(52, 143, 248, 1);
+}
+.Button {
+  border: 3px solid rgba(52, 143, 248, 1);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 100px;
+}
+.BottomText {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgba(234, 234, 234, 1);
+}
+.BottomButton {
+  background-color: rgba(52, 143, 248, 1);
+  border-radius: 100px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  width: 300px;
+}
+
+.CloudTitle {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.CloudSpan {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 52px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.CloudDescription {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgba(234, 234, 234, 1);
+}
+
+.CloudPrice {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46.8px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgba(52, 143, 248, 1);
+}
+.CloudButton {
+  border-radius: 100px;
+  background-color: rgba(52, 143, 248, 1);
+}

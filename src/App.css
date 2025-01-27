@@ -10,3 +10,6 @@
 .m_3f35ae96:where([data-rotate]) {
   transform: rotate(90deg) !important;
 }
+.m_c0783ff9 {
+  padding: 0 !important;
+}
