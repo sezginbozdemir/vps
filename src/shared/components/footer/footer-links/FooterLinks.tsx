@@ -6,6 +6,7 @@ import {
   Stack,
   Text,
   Image,
+  Divider,
 } from "@mantine/core";
 import css from "./FooterLinks.module.css";
 import whatsapp from "../../../../assets/social/whatsapp.png";
@@ -14,6 +15,7 @@ import linkedin from "../../../../assets/social/linkedin.png";
 import mastercard from "../../../../assets/social/mastercard.png";
 import paypal from "../../../../assets/social/paypal.png";
 import visa from "../../../../assets/social/visa.png";
+import logo from "../../../../assets/logo.png";
 
 const FooterLinks = () => {
   return (
@@ -64,6 +66,23 @@ const FooterLinks = () => {
               </ActionIcon>
             </Group>
           </Stack>
+        </Grid.Col>
+      </Grid>
+      <Divider className={css.Divider} />
+      <Grid mb={30}>
+        <Grid.Col span={2}>
+          <Image src={logo} />
+        </Grid.Col>
+        <Grid.Col span={6}>
+          <Text className={css.Copyright}>
+            Copyright LOGO VPS. 2024. Toate drepturile sunt rezervate.
+          </Text>
+        </Grid.Col>
+        <Grid.Col span={4}>
+          <Group gap={15}>
+            <Text className={css.Copyright}>Termeni și Condiții</Text>
+            <Text className={css.Copyright}>Politica de Cookies</Text>
+          </Group>
         </Grid.Col>
       </Grid>
     </Container>

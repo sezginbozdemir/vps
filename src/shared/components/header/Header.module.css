@@ -31,6 +31,18 @@
   line-height: 32px;
   font-weight: 500;
 }
+.MenuItem:hover {
+  background-color: #ffffff;
+}
+
+.MenuItem:hover .MenuTitle {
+  font-size: 29px;
+  line-height: 38px;
+}
+.MenuItem:hover .MenusubTitle {
+  font-size: 21px;
+  line-height: 27px;
+}
 
 .MenusubTitle {
   color: #348ff899;

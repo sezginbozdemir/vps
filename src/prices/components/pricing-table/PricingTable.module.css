@@ -8,12 +8,11 @@
   color: rgba(234, 234, 234, 1);
 }
 .SelectRoot {
-  width: 70%;
   margin-top: 1rem;
+  width: 450px;
 }
 .SelectInput {
   border-radius: 12px;
-
   border: 2px solid rgba(37, 40, 45, 1);
   background-color: rgba(2, 7, 16, 1);
   color: rgba(255, 255, 255, 1);

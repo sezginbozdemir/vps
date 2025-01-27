@@ -56,8 +56,8 @@ function Header() {
                     </ThemeIcon>
                   </Group>
                 </Menu.Target>
-                <Menu.Dropdown p={10}>
-                  <Menu.Item component="a" href="/vps">
+                <Menu.Dropdown w={400} p={10}>
+                  <Menu.Item className={css.MenuItem} component="a" href="/vps">
                     <Group>
                       <ThemeIcon size={40} color="transparent">
                         <Image src={vpsIcon} />
@@ -70,7 +70,11 @@ function Header() {
                       </Stack>
                     </Group>
                   </Menu.Item>
-                  <Menu.Item component="a" href="/additional-space">
+                  <Menu.Item
+                    className={css.MenuItem}
+                    component="a"
+                    href="/additional-space"
+                  >
                     <Group>
                       <ThemeIcon size={40} color="transparent">
                         <Image src={databaseIcon} />
