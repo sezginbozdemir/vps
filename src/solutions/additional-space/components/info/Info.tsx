@@ -7,9 +7,15 @@ import {
   Group,
   ThemeIcon,
   Grid,
+  List,
+  Button,
+  Divider,
+  Box,
 } from "@mantine/core";
 import css from "./Info.module.css";
 import megaphone from "../../../../assets/megaphone.png";
+import data from "./data";
+import arrow from "../../../../assets/arrow-blue.png";
 
 const Info = () => {
   return (
@@ -53,6 +59,52 @@ const Info = () => {
           </Grid.Col>
         </Grid>
       </Card>
+      <Box mb={200}>
+        {data.map((item, index) => (
+          <Box>
+            <Stack gap={40} align="center" justify="center">
+              <Text className={css.BottomTitle}>
+                {item.title}
+                <span className={css.BottomTitleSpan}>{item.titleSpan}</span>
+              </Text>
+              <Text w="70%" className={css.BottomDescription}>
+                {item.description}
+              </Text>
+              <Grid>
+                <Grid.Col span={{ base: 12, md: 8 }}>
+                  <List
+                    icon={
+                      <ThemeIcon color="transparent" size={15} radius="xl">
+                        <Image src={arrow} />
+                      </ThemeIcon>
+                    }
+                    w="70%"
+                    spacing={10}
+                    className={css.BottomList}
+                  >
+                    {item.listItems.map((listItem, i) => (
+                      <List.Item key={i}>{listItem}</List.Item>
+                    ))}
+                  </List>
+                </Grid.Col>
+                <Grid.Col className={css.ButtonCol} span={{ base: 12, md: 4 }}>
+                  <Button
+                    variant="filled"
+                    size="md"
+                    className={css.BottomButton}
+                  >
+                    Vezi lista de prețuri
+                  </Button>
+                </Grid.Col>
+              </Grid>
+            </Stack>
+
+            {index < data.length - 1 && (
+              <Divider className={css.Divider} my={50} />
+            )}
+          </Box>
+        ))}
+      </Box>
     </Container>
   );
 };
