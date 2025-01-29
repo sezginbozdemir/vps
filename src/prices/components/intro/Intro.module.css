@@ -1,9 +1,4 @@
 .Title {
-  font-family: Roboto;
-  font-size: 80px;
-  font-weight: 700;
-  line-height: 104px;
-  letter-spacing: 0.05em;
   text-align: center;
   color: rgba(255, 255, 255, 1);
 }
@@ -12,17 +7,7 @@
 }
 
 .Text {
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  letter-spacing: 0.05em;
   text-align: center;
   color: rgba(234, 234, 234, 1);
   width: 60%;
-}
-.Button {
-  border-radius: 100px;
-  border: 3px solid rgba(52, 143, 248, 1);
-  color: rgba(255, 255, 255, 1);
 }

@@ -16,31 +16,12 @@
   opacity: 0.7;
 }
 .Title {
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 52px;
   color: #ffffff;
 }
 .TitleSpan {
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
   font-weight: 300;
-  line-height: 52px;
 }
 
 .Paragraph {
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23px;
   color: #eaeaea;
-}
-.Button {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 26px;
-  color: #ffffff;
-  background-color: #348ff8;
 }

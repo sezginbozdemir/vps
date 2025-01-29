@@ -1,8 +1,4 @@
 .Title {
-  font-size: 40px;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  line-height: 52px;
   color: #ffffff;
   text-align: center;
 }
@@ -13,10 +9,6 @@
 
 .Accordion {
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 28px;
   width: 85%;
 }
 
@@ -33,16 +25,12 @@
 
 .AccordionControl {
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 32px;
 }
 .AccordionPanel {
   color: #eaeaea;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23px;
   word-wrap: break-word;
+}
+.arrow {
+  width: 20px;
+  height: 20px;
 }

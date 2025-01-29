@@ -13,12 +13,6 @@
   position: relative;
 }
 
-.Group {
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
 .GridCol {
   display: flex;
   flex-direction: column;
@@ -34,25 +28,30 @@
   position: absolute;
   top: 40%;
   left: 20%;
+  width: 80px;
   @media (max-width: 767px) {
     top: 26%;
     left: 5%;
+    width: 60px;
   }
   @media (max-width: 480px) {
     top: 31%;
-    width: 60px !important;
+    width: 40px;
   }
 }
 .FloatCloud2 {
   position: absolute;
   top: 30%;
   left: 63%;
+  width: 80px;
+
   @media (max-width: 767px) {
     top: 22%;
     left: 55%;
+    width: 60px;
   }
   @media (max-width: 480px) {
-    width: 60px !important;
+    width: 40px;
   }
 }
 
@@ -60,70 +59,87 @@
   position: absolute;
   top: 40%;
   left: 74%;
+  width: 80px;
   @media (max-width: 767px) {
     top: 31%;
     left: 66%;
+    width: 60px;
   }
   @media (max-width: 480px) {
-    width: 60px !important;
+    width: 40px;
   }
 }
 .FloatShield2 {
   position: absolute;
   top: 32%;
   right: 10%;
+  width: 80px;
+
   @media (max-width: 767px) {
     top: 26%;
+    width: 60px;
   }
   @media (max-width: 480px) {
-    width: 60px !important;
+    width: 40px;
   }
 }
 .FloatLightning {
   position: absolute;
   top: 37%;
   left: 40%;
+  width: 80px;
+
   @media (max-width: 767px) {
     top: 24%;
     left: 23%;
+    width: 60px;
   }
   @media (max-width: 480px) {
-    width: 60px !important;
     top: 29%;
+    width: 40px;
   }
 }
 .FloatLightning2 {
   position: absolute;
   top: 25%;
   left: 76%;
+  width: 80px;
+
   @media (max-width: 767px) {
     top: 18%;
+    width: 60px;
   }
   @media (max-width: 480px) {
-    width: 60px !important;
+    width: 40px;
   }
 }
 .FloatGraph {
   position: absolute;
   top: 23%;
   left: 47%;
+  width: 80px;
+
   @media (max-width: 767px) {
     top: 17%;
+    width: 60px;
   }
   @media (max-width: 480px) {
-    width: 60px !important;
+    width: 40px;
   }
 }
 .FloatGraph2 {
   position: absolute;
   top: 45%;
   left: 55%;
+  width: 80px;
+
   @media (max-width: 767px) {
     top: 30%;
     left: 40%;
+    width: 60px;
   }
   @media (max-width: 480px) {
-    width: 60px !important;
+    width: 40px;
   }
 }
 
@@ -135,84 +151,36 @@
 }
 
 .Title {
-  font-size: 25px;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
   color: #ffffff;
-  line-height: 32px;
 }
 .Description {
-  font-size: 18px;
-  font-weight: 400;
   max-height: 300px;
-  font-family: "Inter", sans-serif;
-  line-height: 23px;
   color: #eaeaea;
 }
 
 .Text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 80px;
   color: #ffffff;
   margin-top: 1.5rem;
-  line-height: 104px;
-  @media (max-width: 767px) {
-    font-size: 50px;
-    line-height: 65px;
-  }
-  @media (max-width: 480px) {
-    font-size: 32px;
-    line-height: 41px;
-  }
 }
 .span {
   font-weight: 300;
-  font-size: 80px;
-  color: #ffffff;
-  @media (max-width: 767px) {
-    font-size: 50px;
-    line-height: 65px;
-  }
-  @media (max-width: 480px) {
-    font-size: 32px;
-    line-height: 41px;
-  }
 }
 
 .Text2 {
-  font-family: "Inter", sans-serif;
   color: #eaeaea;
-  font-weight: 400;
-  font-size: 18px;
+  width: 60%;
 }
 .Text3 {
-  font-family: "Roboto", sans-serif;
   color: #eaeaea;
-  font-weight: 300;
-  font-size: 20px;
 }
 
 .span2 {
-  font-family: "Roboto", sans-serif;
   color: #348ff8;
   font-weight: 500;
   font-size: 36px;
 }
 .span3 {
-  font-family: "Roboto", sans-serif;
   color: #348ff8;
   font-weight: 500;
   font-size: 20px;
-}
-.Button {
-  border-radius: 100px;
-  border: 3px solid rgba(52, 143, 248, 1);
-  background-color: rgba(52, 143, 248, 1);
-  height: 52px;
-}
-
-.Button:hover {
-  border: 3px solid rgba(52, 143, 248, 0.6);
-  background-color: rgba(2, 7, 16, 1);
 }

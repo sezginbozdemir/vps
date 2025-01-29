@@ -14,47 +14,35 @@
       #000103 100%
     ),
     url("/backgrounds/background-4.png");
-  background-size: 100% 100%, 100% 100%, 100% 100%, 115% auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+
+  background-position: center;
+  overflow: hidden;
 }
 .Container {
   height: 100%;
   width: 100%;
 }
 .Title {
-  font-family: "Roboto", sans-serif;
-  font-size: 80px;
-  line-height: 104px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.subTitle {
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  line-height: 52px;
-  font-weight: 700;
   color: #ffffff;
 }
 
 .TitleSpan {
-  font-family: "Roboto", sans-serif;
-  font-size: 80px;
-  line-height: 104px;
   font-weight: 300;
 }
+
+.subTitle {
+  color: #ffffff;
+}
 .subTitleSpan {
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  line-height: 52px;
   font-weight: 300;
 }
 
 .Paragraph {
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: 400;
   color: #eaeaea;
+  width: 45%;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }

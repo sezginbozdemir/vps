@@ -1,9 +1,4 @@
 .Title {
-  font-family: Roboto;
-  font-size: 80px;
-  font-weight: 700;
-  line-height: 104px;
-  letter-spacing: 0.05em;
   text-align: center;
   color: rgba(255, 255, 255, 1);
 }
@@ -12,29 +7,13 @@
 }
 
 .Paragraph {
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  letter-spacing: 0.05em;
   text-align: center;
   color: rgba(234, 234, 234, 1);
 }
 .ColTitle {
-  font-family: Roboto;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 52px;
-  letter-spacing: 0.05em;
-  text-align: center;
   color: rgba(255, 255, 255, 1);
 }
 .InputLabel {
-  font-family: Roboto;
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 32.5px;
-  letter-spacing: 0.05em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
   margin-bottom: 0.5rem;
@@ -58,11 +37,6 @@
   flex-direction: column;
 }
 .InputAreaDescription {
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  letter-spacing: 0.05em;
   text-align: left;
   color: rgba(234, 234, 234, 1);
   order: 1;
@@ -78,20 +52,10 @@
 }
 
 .CardText {
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  letter-spacing: 0.05em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
 }
 .CardTitle {
-  font-family: Roboto;
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 32.5px;
-  letter-spacing: 0.05em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
 }
@@ -101,16 +65,4 @@
   height: 0.5px;
   width: 100%;
   margin: 5px 0;
-}
-.Button {
-  border-radius: 100px;
-  background-color: rgba(52, 143, 248, 1);
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: rgba(255, 255, 255, 1);
-  width: 250px;
 }

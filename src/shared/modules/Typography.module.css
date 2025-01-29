@@ -1,0 +1,106 @@
+.T1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 104px;
+  @media (max-width: 767px) {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  @media (max-width: 480px) {
+    font-size: 32px;
+    line-height: 41px;
+  }
+}
+.T2 {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0.05em;
+  @media (max-width: 767px) {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  @media (max-width: 480px) {
+    font-size: 28px;
+    line-height: 36.4px;
+  }
+}
+
+.T3 {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 32.5px;
+  letter-spacing: 0.05em;
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.T4 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 39px;
+  letter-spacing: 0.05em;
+
+  @media (max-width: 767px) {
+    font-size: 25px;
+    line-height: 32.5px;
+  }
+}
+
+.Body {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  letter-spacing: 0.05em;
+
+  @media (max-width: 767px) {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    letter-spacing: 0.05em;
+  }
+}
+.ButtonBody {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+
+  @media (max-width: 767px) {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.4px;
+    letter-spacing: 0.05em;
+  }
+}
+.Detail {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  letter-spacing: 0.05em;
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 18.2px;
+  }
+}
+.CardDetail {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  letter-spacing: 0.05em;
+  @media (max-width: 767px) {
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+}

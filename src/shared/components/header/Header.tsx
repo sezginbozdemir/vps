@@ -12,6 +12,8 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import css from "./Header.module.css";
+import font from "../../modules/Typography.module.css";
+import styles from "../../modules/Button.module.css";
 import logo from "../../../assets/logo.png";
 import vpsIcon from "../../../assets/vps-icon.png";
 import databaseIcon from "../../../assets/database-icon.png";
@@ -30,7 +32,7 @@ function Header() {
           <Group justify="space-between" h="100%">
             <Image src={logo} w="auto" h={30} fit="contain" />
             <Group h="100%" gap={30} visibleFrom="sm">
-              <a href="/" className={css.Link}>
+              <a href="/" className={`${css.Link} ${font.ButtonBody}`}>
                 Acasă
               </a>
 
@@ -41,7 +43,11 @@ function Header() {
                 withArrow
               >
                 <Menu.Target>
-                  <Group gap={5} align="center" className={css.Link}>
+                  <Group
+                    gap={5}
+                    align="center"
+                    className={`${css.Link} ${font.ButtonBody}`}
+                  >
                     Soluții
                     <ThemeIcon size={15} color="transparent">
                       <Image
@@ -59,12 +65,14 @@ function Header() {
                 <Menu.Dropdown w={400} p={10}>
                   <Menu.Item className={css.MenuItem} component="a" href="/vps">
                     <Group>
-                      <ThemeIcon size={40} color="transparent">
+                      <ThemeIcon className={css.MenuIcon} color="transparent">
                         <Image src={vpsIcon} />
                       </ThemeIcon>
                       <Stack gap={0}>
-                        <Text className={css.MenuTitle}>VPS</Text>
-                        <Text className={css.MenusubTitle}>
+                        <Text className={`${css.MenuTitle} ${font.T3}`}>
+                          VPS
+                        </Text>
+                        <Text className={`${font.Body} ${css.MenusubTitle}`}>
                           Servere VPS în Cloud
                         </Text>
                       </Stack>
@@ -76,12 +84,14 @@ function Header() {
                     href="/additional-space"
                   >
                     <Group>
-                      <ThemeIcon size={40} color="transparent">
+                      <ThemeIcon className={css.MenuIcon} color="transparent">
                         <Image src={databaseIcon} />
                       </ThemeIcon>
                       <Stack gap={0}>
-                        <Text className={css.MenuTitle}>Spațiu Adițional</Text>
-                        <Text className={css.MenusubTitle}>
+                        <Text className={`${css.MenuTitle} ${font.T3}`}>
+                          Spațiu Adițional
+                        </Text>
+                        <Text className={`${font.Body} ${css.MenusubTitle}`}>
                           Extinde-ți spațiul în Cloud
                         </Text>
                       </Stack>
@@ -89,17 +99,15 @@ function Header() {
                   </Menu.Item>
                 </Menu.Dropdown>
               </Menu>
-              <a href="/prices" className={css.Link}>
+              <a href="/prices" className={`${css.Link} ${font.ButtonBody}`}>
                 Prețuri
               </a>
-              <a href="/contact" className={css.Link}>
+              <a href="/contact" className={`${css.Link} ${font.ButtonBody}`}>
                 Contact
               </a>
               <Button
-                radius="xl"
-                variant="outline"
-                className={css.Button}
-                size="lg"
+                className={`${styles.ButtonOutline} ${font.ButtonBody}`}
+                size="md"
               >
                 LOG IN
               </Button>

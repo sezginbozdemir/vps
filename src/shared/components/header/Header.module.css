@@ -9,57 +9,36 @@
   padding: 0rem 2rem;
   width: 100%;
 }
-.Button {
-  border: 3px solid rgba(52, 143, 248, 1);
-  color: rgba(255, 255, 255, 1);
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  text-align: left;
-}
-.Button:hover {
-  background-color: rgba(52, 143, 248, 0.6);
-  color: rgba(255, 255, 255, 1);
-}
 
 .Link {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
-  @media (max-width: 992px) {
-  }
 }
 
 .MenuTitle {
   color: #081a30;
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  line-height: 32px;
-  font-weight: 500;
+}
+.MenusubTitle {
+  color: #348ff899;
+  opacity: 0.6;
+}
+
+.MenuIcon {
+  width: 45px;
+}
+.MenuItem:hover .MenuIcon {
+  width: 54px;
 }
 .MenuItem:hover {
   background-color: #ffffff;
 }
 
 .MenuItem:hover .MenuTitle {
-  font-size: 29px;
-  line-height: 38px;
+  font-size: 30px;
+  line-height: 39px;
 }
 .MenuItem:hover .MenusubTitle {
-  font-size: 21px;
-  line-height: 27px;
-}
-
-.MenusubTitle {
-  color: #348ff899;
-  opacity: 0.6;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: 400;
+  font-size: 21.6px;
+  line-height: 28px;
 }

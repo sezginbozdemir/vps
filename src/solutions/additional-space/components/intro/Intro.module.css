@@ -24,23 +24,9 @@
   width: 100%;
 }
 .Title {
-  font-family: "Roboto", sans-serif;
-  font-size: 80px;
-  line-height: 104px;
-  font-weight: 700;
   color: #ffffff;
 }
 
 .TitleSpan {
   font-weight: 300;
-}
-
-.Button {
-  border: 3px solid #348ff8;
-  border-radius: 100px;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 26px;
 }

@@ -1,15 +1,10 @@
 .SelectText {
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20.8px;
-  letter-spacing: 0.05em;
   text-align: left;
   color: rgba(234, 234, 234, 1);
 }
 .SelectRoot {
   margin-top: 1rem;
-  width: 450px;
+  width: 60%;
 }
 .SelectInput {
   border-radius: 12px;
@@ -17,11 +12,6 @@
   background-color: rgba(2, 7, 16, 1);
   color: rgba(255, 255, 255, 1);
   height: 60px;
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  letter-spacing: 0.05em;
   text-align: left;
 }
 .SelectDropdown {
@@ -32,11 +22,6 @@
   padding: 0;
 }
 .SelectOption {
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  letter-spacing: 0.05em;
   text-align: left;
   padding: 19px 19px;
 }
@@ -71,29 +56,14 @@
 }
 
 .TableTitle {
-  font-family: Roboto;
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 32.5px;
-  letter-spacing: 0.05em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
 }
 .HighlightedContent {
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.05em;
   text-align: center;
   color: rgba(255, 255, 255, 1);
 }
 .TableContent {
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  letter-spacing: 0.05em;
   text-align: left;
   color: rgba(234, 234, 234, 1);
 }
@@ -106,64 +76,22 @@
   text-align: center;
   color: rgba(52, 143, 248, 1);
 }
-.Button {
-  border: 3px solid rgba(52, 143, 248, 1);
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: rgba(255, 255, 255, 1);
-  border-radius: 100px;
-}
 .BottomText {
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  letter-spacing: 0.05em;
   text-align: center;
   color: rgba(234, 234, 234, 1);
 }
-.BottomButton {
-  background-color: rgba(52, 143, 248, 1);
-  border-radius: 100px;
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: rgba(255, 255, 255, 1);
-  width: 300px;
-}
 
 .CloudTitle {
-  font-family: Roboto;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 52px;
-  letter-spacing: 0.05em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
 }
 
 .CloudSpan {
-  font-family: Roboto;
-  font-size: 40px;
   font-weight: 300;
-  line-height: 52px;
-  letter-spacing: 0.05em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
 }
 .CloudDescription {
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  letter-spacing: 0.05em;
   text-align: center;
   color: rgba(234, 234, 234, 1);
 }
@@ -176,8 +104,4 @@
   letter-spacing: 0.05em;
   text-align: center;
   color: rgba(52, 143, 248, 1);
-}
-.CloudButton {
-  border-radius: 100px;
-  background-color: rgba(52, 143, 248, 1);
 }

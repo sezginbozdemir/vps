@@ -1,5 +1,7 @@
 import { Stack, Text, Group, Button } from "@mantine/core";
 import css from "./PricingTable.module.css";
+import font from "../../../shared/modules/Typography.module.css";
+import styles from "../../../shared/modules/Button.module.css";
 
 interface PricingCard {
   cpu: string;
@@ -24,7 +26,9 @@ const VPSPricing = ({ data }: VPSPricingProps) => {
     <>
       {data.map((instance: InstanceType, instanceIndex: number) => (
         <Stack mb={80} mt={70} key={instanceIndex}>
-          <Text className={css.TableTitle}>{instance.title}</Text>
+          <Text className={`${font.T3} ${css.TableTitle}`}>
+            {instance.title}
+          </Text>
           {instance.pricingCards.map((card: PricingCard, cardIndex: number) => (
             <Group
               key={cardIndex}
@@ -34,28 +38,53 @@ const VPSPricing = ({ data }: VPSPricingProps) => {
               justify="space-between"
             >
               <Stack gap={5}>
-                <Text className={css.HighlightedContent}>{card.cpu}</Text>
-                <Text className={css.TableContent}>CPU</Text>
+                <Text
+                  className={`${font.ButtonBody} ${css.HighlightedContent}`}
+                >
+                  {card.cpu}
+                </Text>
+                <Text className={`${font.Body} ${css.TableContent}`}>CPU</Text>
               </Stack>
               <Stack gap={5}>
-                <Text className={css.HighlightedContent}>{card.ram}</Text>
-                <Text className={css.TableContent}>RAM ECC</Text>
+                <Text
+                  className={`${font.ButtonBody} ${css.HighlightedContent}`}
+                >
+                  {card.ram}
+                </Text>
+                <Text className={`${font.Body} ${css.TableContent}`}>
+                  RAM ECC
+                </Text>
               </Stack>
               <Stack gap={5}>
-                <Text className={css.HighlightedContent}>{card.storage}</Text>
-                <Text className={css.TableContent}>{card.storageType}</Text>
+                <Text
+                  className={`${font.ButtonBody} ${css.HighlightedContent}`}
+                >
+                  {card.storage}
+                </Text>
+                <Text className={`${font.Body} ${css.TableContent}`}>
+                  {card.storageType}
+                </Text>
               </Stack>
               <Stack gap={5}>
-                <Text className={css.HighlightedContent}>{card.transfer}</Text>
-                <Text className={css.TableContent}>Transfer</Text>
+                <Text
+                  className={`${font.ButtonBody} ${css.HighlightedContent}`}
+                >
+                  {card.transfer}
+                </Text>
+                <Text className={`${font.Body} ${css.TableContent}`}>
+                  Transfer
+                </Text>
               </Stack>
-              <Text className={css.TableContent}>
+              <Text className={`${font.Body} ${css.TableContent}`}>
                 <span className={css.PriceSpan}>
                   {card.price.split(" ")[0]}
                 </span>
                 EUR
               </Text>
-              <Button variant="outline" size="md" className={css.Button}>
+              <Button
+                size="md"
+                className={`${styles.ButtonOutline} ${font.ButtonBody}`}
+              >
                 Alege
               </Button>
             </Group>

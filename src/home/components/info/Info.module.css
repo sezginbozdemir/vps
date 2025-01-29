@@ -28,30 +28,26 @@
   margin-top: 3rem;
 }
 .Header {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
   text-align: center;
   margin-top: 3rem;
   color: #ffffff;
 }
 .Title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 32px;
   color: #ffffff;
 }
 
 .Description {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
   color: #eaeaea;
 }
 .Tag {
   background-color: #348ff8;
   color: #ffffff;
+  width: 100%;
+  text-align: center;
+  border-radius: 100px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  justify-content: center;
 }

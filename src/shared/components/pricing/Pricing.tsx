@@ -8,6 +8,8 @@ import {
   Grid,
 } from "@mantine/core";
 import css from "./Pricing.module.css";
+import font from "../../../shared/modules/Typography.module.css";
+import styles from "../../../shared/modules/Button.module.css";
 import data from "./data.ts";
 import { useLocation } from "react-router-dom";
 const Pricing = () => {
@@ -17,7 +19,9 @@ const Pricing = () => {
   return (
     <Container mb={150} className={css.Container}>
       <Stack mb={10} justify="center" align="center">
-        <Text className={TextClassName}>Cumpără un plan de Hosting VPS</Text>
+        <Text className={`${font.T2} ${TextClassName}`}>
+          Cumpără un plan de Hosting VPS
+        </Text>
         <Grid classNames={{ inner: css.GridInner }}>
           {data.map((plan, index) => (
             <Grid.Col
@@ -34,28 +38,32 @@ const Pricing = () => {
                     inheritPadding
                     className={css.CardSection}
                   >
-                    <Text> CEL MAI POPULAR</Text>
+                    <Text className={font.Body}> CEL MAI POPULAR</Text>
                   </Card.Section>
                 )}
                 <Stack px="md" gap="md" justify="space-between">
                   <Stack gap={0}>
-                    <Text className={css.Title1}>
+                    <Text className={`${font.T4} ${css.Title1}`}>
                       {plan.type.toUpperCase()}
                     </Text>
-                    <Text className={css.Title2}>{plan.cpu}</Text>
+                    <Text className={`${font.T3} ${css.Title2}`}>
+                      {plan.cpu}
+                    </Text>
                   </Stack>
                   <Stack gap={0}>
-                    <Text className={css.Title3}>
+                    <Text className={`${font.Body} ${css.Title3}`}>
                       EUR€ <span className={css.Title3Span}>{plan.price}</span>
                       /luna
                     </Text>
-                    <Text className={css.subTitle3}>{plan.billingCycle}</Text>
+                    <Text className={`${font.CardDetail} ${css.subTitle3}`}>
+                      {plan.billingCycle}
+                    </Text>
                   </Stack>
                   <Button
                     className={
                       plan.isPopular
-                        ? `${css.ButtonFilled}`
-                        : `${css.ButtonOutline}`
+                        ? `${styles.ButtonFilled} ${font.ButtonBody}`
+                        : `${styles.ButtonOutline} ${font.ButtonBody}`
                     }
                     size="md"
                   >
@@ -64,8 +72,8 @@ const Pricing = () => {
                   <Divider className={css.Divider}></Divider>
                   <Stack gap={15}>
                     {plan.features.map((feature, index) => (
-                      <Text key={index} className={css.Text1}>
-                        <span className={css.TextSpan}>{feature.value}</span>{" "}
+                      <Text key={index} className={`${font.Body} ${css.Text1}`}>
+                        <span className={css.TextSpan}>{feature.value}</span>
                         {feature.unit}
                       </Text>
                     ))}

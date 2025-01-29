@@ -1,0 +1,23 @@
+.ButtonFilled {
+  border-radius: 100px;
+  border: 3px solid rgba(52, 143, 248, 1);
+  background-color: rgba(52, 143, 248, 1);
+  height: 52px;
+  color: #ffffff;
+}
+
+.ButtonFilled:hover {
+  border: 3px solid rgba(52, 143, 248, 0.6);
+  background-color: rgba(2, 7, 16, 1);
+}
+
+.ButtonOutline {
+  border: 3px solid rgba(52, 143, 248, 1);
+  background-color: transparent;
+  border-radius: 100px;
+  height: 52px;
+  color: #ffffff;
+}
+.ButtonOutline:hover {
+  background-color: rgba(52, 143, 248, 0.6);
+}
