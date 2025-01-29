@@ -30,7 +30,7 @@ const FooterLinks = () => {
     <Container mt={100} w="100%" h="100%">
       <Grid className={css.Grid}>
         <Grid.Col span={{ base: 12, xs: 4, sm: 3 }}>
-          <Stack>
+          <Stack align="start" justify="center">
             <Text className={`${font.T3} ${css.Title}`}>Companie</Text>
             <Text
               onClick={() => handleNavigate("/")}
@@ -59,7 +59,7 @@ const FooterLinks = () => {
           </Stack>
         </Grid.Col>
         <Grid.Col span={{ base: 12, xs: 8, sm: 4 }}>
-          <Stack>
+          <Stack align="start" justify="center">
             <Text className={`${font.T3} ${css.Title}`}>
               Informatii de contact
             </Text>
