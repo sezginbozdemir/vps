@@ -38,7 +38,7 @@ const PricingTable = () => {
 
   return (
     <Container>
-      <Stack align="center" justify="center">
+      <Stack align="center">
         <Text className={`${font.Detail} ${css.SelectText}`}>
           Tipul de servicii LOGO VPS
         </Text>

@@ -25,9 +25,14 @@ const Contact = () => {
         </Text>
       </Stack>
       <Grid mb={30}>
-        <Grid.Col span={{ base: 12, md: 6 }}>
+        <Grid.Col span={{ base: 12, sm: 6 }} order={{ base: 2, sm: 1 }}>
           <Stack h="100%" align="start" justify="space-between">
-            <Text mb={50} className={`${font.T2} ${css.ColTitle}`}>
+            <Text
+              mb={50}
+              w="100%"
+              ta="center"
+              className={`${font.T2} ${css.ColTitle}`}
+            >
               Trimite-ne un mesaj
             </Text>
 
@@ -65,9 +70,14 @@ const Contact = () => {
             />
           </Stack>
         </Grid.Col>
-        <Grid.Col span={{ base: 12, md: 5 }} offset={{ md: 1 }}>
+        <Grid.Col span={{ base: 12, sm: 6 }} order={{ base: 1, sm: 2 }}>
           <Stack align="start" justify="center">
-            <Text mb={50} className={`${font.T2} ${css.ColTitle}`}>
+            <Text
+              mb={50}
+              w="100%"
+              ta="center"
+              className={`${font.T2} ${css.ColTitle}`}
+            >
               Informații Societate
             </Text>
             <Stack align="start" justify="start" className={css.Card}>

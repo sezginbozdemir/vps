@@ -1,6 +1,5 @@
 import {
   Box,
-  Group,
   Button,
   Container,
   Text,
@@ -29,7 +28,7 @@ const Intro = () => {
       <Image src={graph} className={css.FloatGraph} />
       <Image src={graph} className={css.FloatGraph2} />
 
-      <Container className={css.Container}>
+      <Container size={1100} className={css.Container}>
         <Stack justify="space-between" gap={500}>
           <Stack align="start" justify="start" gap={34}>
             <Text className={`${css.Text} ${font.T1}`}>

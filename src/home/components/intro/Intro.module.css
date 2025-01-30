@@ -20,10 +20,6 @@
   gap: 15px;
   text-align: center;
 }
-.Container {
-  display: flex;
-  flex-direction: column;
-}
 .FloatCloud {
   position: absolute;
   top: 40%;
@@ -159,10 +155,19 @@
 
 .Title {
   color: #ffffff;
+  @media (max-width: 992px) {
+    width: 80%;
+  }
+  @media (max-width: 767px) {
+    width: 50%;
+  }
 }
 .Description {
   max-height: 300px;
   color: #eaeaea;
+  @media (max-width: 767px) {
+    width: 70%;
+  }
 }
 
 .Text {

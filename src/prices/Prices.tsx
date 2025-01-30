@@ -10,7 +10,7 @@ const Prices = () => {
     <>
       <Intro scrollToRef={pricingTableRef} />
       <Pricing />
-      <div style={{ alignSelf: "center" }} ref={pricingTableRef}>
+      <div style={{ width: "100%" }} ref={pricingTableRef}>
         <PricingTable />
       </div>
     </>

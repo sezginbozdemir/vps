@@ -7,7 +7,7 @@ interface CloudData {
   title: string;
   titleSpan: string;
   description: string;
-  pricePerGB: any;
+  pricePerGB: string;
 }
 
 interface PricingProps {
@@ -39,7 +39,8 @@ const CloudPricing = ({ data }: PricingProps) => {
                 <span className={css.CloudPrice}>{item.pricePerGB}</span>EUR/GB
               </Text>
               <Text className={`${font.Body} ${css.CloudDescription}`}>
-                100 GB= {item.pricePerGB * 100}
+                100 GB= {parseFloat(item.pricePerGB.replace(",", ".")) * 100}{" "}
+                EUR/lună
               </Text>
             </Stack>
             <Button

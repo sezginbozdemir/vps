@@ -16,6 +16,7 @@ const FooterBot = () => {
           Răspunsuri
         </Text>
         <Accordion
+          w="100%"
           className={css.Accordion}
           chevronPosition="left"
           value={openedItem}

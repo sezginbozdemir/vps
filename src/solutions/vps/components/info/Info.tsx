@@ -39,7 +39,6 @@ const Info = () => {
                       <Image src={arrow} />
                     </ThemeIcon>
                   }
-                  w="70%"
                   spacing={10}
                   className={`${font.Body} ${css.List}`}
                 >

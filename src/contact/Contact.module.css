@@ -49,6 +49,11 @@
   background-color: rgba(2, 7, 16, 1);
   max-height: 100%;
   padding: 30px 20px;
+  margin-left: 20px;
+  @media (max-width: 767px) {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .CardText {
