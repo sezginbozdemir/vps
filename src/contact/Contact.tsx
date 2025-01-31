@@ -11,8 +11,12 @@ import {
 import css from "./Contact.module.css";
 import font from "../shared/modules/Typography.module.css";
 import styles from "../shared/modules/Button.module.css";
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <Container>
       <Stack mt={50} mb={100} align="center" justify="center">

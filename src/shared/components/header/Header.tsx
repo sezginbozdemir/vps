@@ -19,8 +19,11 @@ import vpsIcon from "../../../assets/vps-icon.png";
 import databaseIcon from "../../../assets/database-icon.png";
 import chevron from "../../../assets/chevron.png";
 import { useDisclosure } from "@mantine/hooks";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigate = useNavigate();
   const [drawerOpened, setDrawerOpened] = useState(false);
   const [menuOpened, { toggle: toggleMenu, close: closeMenu }] =
     useDisclosure(false);
@@ -49,14 +52,21 @@ function Header() {
       <header
         className={`${css.Header} ${drawerOpened ? css.HeaderOpened : ""}`}
       >
-        <Container size={950}>
+        <Container size={1000}>
           <Group justify="space-between" h="100%">
-            <Image src={logo} w="auto" h={25} fit="contain" />
+            <Image
+              onClick={() => navigate("/")}
+              src={logo}
+              w="auto"
+              h={25}
+              fit="contain"
+              className={css.Logo}
+            />
             <Group justify="space-between">
-              <Group h="100%" gap={20} visibleFrom="sm">
-                <a href="/" className={`${css.Link} ${font.ButtonBody}`}>
+              <Group h="100%" gap={30} visibleFrom="sm">
+                <Link to="/" className={`${css.Link} ${font.ButtonBody}`}>
                   Acasă
-                </a>
+                </Link>
 
                 <Menu
                   zIndex={2400}
@@ -92,8 +102,8 @@ function Header() {
                   <Menu.Dropdown w={400} p={10}>
                     <Menu.Item
                       className={css.MenuItem}
-                      component="a"
-                      href="/vps"
+                      component={Link}
+                      to="/vps"
                     >
                       <Group>
                         <ThemeIcon className={css.MenuIcon} color="transparent">
@@ -111,8 +121,8 @@ function Header() {
                     </Menu.Item>
                     <Menu.Item
                       className={css.MenuItem}
-                      component="a"
-                      href="/additional-space"
+                      component={Link}
+                      to="/additional-space"
                     >
                       <Group>
                         <ThemeIcon className={css.MenuIcon} color="transparent">
@@ -130,12 +140,15 @@ function Header() {
                     </Menu.Item>
                   </Menu.Dropdown>
                 </Menu>
-                <a href="/prices" className={`${css.Link} ${font.ButtonBody}`}>
+                <Link to="/prices" className={`${css.Link} ${font.ButtonBody}`}>
                   Prețuri
-                </a>
-                <a href="/contact" className={`${css.Link} ${font.ButtonBody}`}>
+                </Link>
+                <Link
+                  to="/contact"
+                  className={`${css.Link} ${font.ButtonBody}`}
+                >
                   Contact
-                </a>
+                </Link>
               </Group>
               <Group justify="space-between">
                 <Button
@@ -162,9 +175,13 @@ function Header() {
         className={`${css.CustomDrawer} ${drawerOpened ? css.Opened : ""}`}
       >
         <Stack align="center" h="100%" gap={60}>
-          <a href="/" className={`${css.Link} ${font.ButtonBody}`}>
+          <Link
+            to="/"
+            onClick={() => setDrawerOpened(false)}
+            className={`${css.Link} ${font.ButtonBody}`}
+          >
             Acasă
-          </a>
+          </Link>
           <Menu
             zIndex={2400}
             opened={menuOpenedMobile}
@@ -195,7 +212,12 @@ function Header() {
               </Group>
             </Menu.Target>
             <Menu.Dropdown w={400} p={10}>
-              <Menu.Item className={css.MenuItem} component="a" href="/vps">
+              <Menu.Item
+                className={css.MenuItem}
+                onClick={() => setDrawerOpened(false)}
+                component={Link}
+                to="/vps"
+              >
                 <Group>
                   <ThemeIcon className={css.MenuIcon} color="transparent">
                     <Image src={vpsIcon} />
@@ -210,8 +232,9 @@ function Header() {
               </Menu.Item>
               <Menu.Item
                 className={css.MenuItem}
-                component="a"
-                href="/additional-space"
+                component={Link}
+                onClick={() => setDrawerOpened(false)}
+                to="/additional-space"
               >
                 <Group>
                   <ThemeIcon className={css.MenuIcon} color="transparent">
@@ -228,13 +251,21 @@ function Header() {
                 </Group>
               </Menu.Item>
             </Menu.Dropdown>
-          </Menu>{" "}
-          <a href="/prices" className={`${css.Link} ${font.ButtonBody}`}>
+          </Menu>
+          <Link
+            to="/prices"
+            onClick={() => setDrawerOpened(false)}
+            className={`${css.Link} ${font.ButtonBody}`}
+          >
             Prețuri
-          </a>
-          <a href="/contact" className={`${css.Link} ${font.ButtonBody}`}>
+          </Link>
+          <Link
+            to="/contact"
+            onClick={() => setDrawerOpened(false)}
+            className={`${css.Link} ${font.ButtonBody}`}
+          >
             Contact
-          </a>
+          </Link>
           <Button
             className={`${css.ButtonLogInMenu} ${styles.ButtonOutline} ${font.ButtonBody}`}
             size="md"

@@ -17,15 +17,14 @@ const Pricing = () => {
   const TextClassName =
     location.pathname !== "/" ? `${css.Text} ${css.NoDisplay}` : css.Text;
   return (
-    <Container w="100%" mb={150} className={css.Container}>
+    <Container size={500} mb={150} className={css.Container}>
       <Stack mb={10} justify="center" align="center">
         <Text className={`${font.T2} ${TextClassName}`}>
           Cumpără un plan de Hosting VPS
         </Text>
-        <Grid w="100%" classNames={{ inner: css.GridInner }}>
+        <Grid classNames={{ inner: css.GridInner }}>
           {data.map((plan, index) => (
             <Grid.Col
-              px={5}
               className={plan.isPopular ? css.MiddleCol : css.Col}
               span={{ base: 12, sm: 4 }}
             >

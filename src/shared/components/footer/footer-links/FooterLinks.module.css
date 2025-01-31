@@ -9,6 +9,10 @@
   color: rgba(52, 143, 248, 1);
   cursor: pointer;
 }
+.Link {
+  text-decoration: none;
+  color: #ffffff;
+}
 .Divider {
   width: 100%;
   height: 0.5px;
@@ -19,4 +23,9 @@
 .Copyright {
   color: rgba(234, 234, 234, 1);
   text-align: left;
+}
+.MobileGrid {
+  @media (max-width: 575px) {
+    margin-bottom: 2rem;
+  }
 }

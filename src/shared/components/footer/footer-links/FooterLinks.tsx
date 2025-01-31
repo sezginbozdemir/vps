@@ -8,7 +8,7 @@ import {
   Image,
   Divider,
 } from "@mantine/core";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import css from "./FooterLinks.module.css";
 import font from "../../../modules/Typography.module.css";
 import whatsapp from "../../../../assets/social/whatsapp.png";
@@ -20,42 +20,24 @@ import visa from "../../../../assets/social/visa.png";
 import logo from "../../../../assets/logo.png";
 
 const FooterLinks = () => {
-  const navigate = useNavigate();
-
-  const handleNavigate = (path: string) => {
-    navigate(path);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
   return (
-    <Container mt={100} w="100%" h="100%">
-      <Grid className={css.Grid}>
-        <Grid.Col span={{ base: 12, xs: 4, sm: 3 }}>
+    <Container mt={200} w="100%">
+      <Grid mb={30} className={css.Grid}>
+        <Grid.Col className={css.MobileGrid} span={{ base: 12, xs: 4, sm: 3 }}>
           <Stack align="start" justify="center">
             <Text className={`${font.T3} ${css.Title}`}>Companie</Text>
-            <Text
-              onClick={() => handleNavigate("/")}
-              className={`${font.ButtonBody} ${css.Link}`}
-            >
+            <Link to="/" className={`${font.ButtonBody} ${css.Link}`}>
               Acasa
-            </Text>
-            <Text
-              onClick={() => handleNavigate("/vps")}
-              className={`${font.ButtonBody} ${css.Link}`}
-            >
+            </Link>
+            <Link to="/vps" className={`${font.ButtonBody} ${css.Link}`}>
               Solutii
-            </Text>
-            <Text
-              onClick={() => handleNavigate("/prices")}
-              className={`${font.ButtonBody} ${css.Link}`}
-            >
+            </Link>
+            <Link to="/prices" className={`${font.ButtonBody} ${css.Link}`}>
               Preturi
-            </Text>
-            <Text
-              onClick={() => handleNavigate("/contact")}
-              className={`${font.ButtonBody} ${css.Link}`}
-            >
+            </Link>
+            <Link to="/contact" className={`${font.ButtonBody} ${css.Link}`}>
               Contact
-            </Text>
+            </Link>
           </Stack>
         </Grid.Col>
         <Grid.Col span={{ base: 12, xs: 8, sm: 4 }}>
@@ -102,7 +84,7 @@ const FooterLinks = () => {
         </Grid.Col>
       </Grid>
       <Divider className={css.Divider} />
-      <Grid mb={30}>
+      <Grid mb={0}>
         <Grid.Col
           offset={{ base: 10, xs: 0, sm: 0 }}
           span={{ base: 2, xs: 2, sm: 2 }}

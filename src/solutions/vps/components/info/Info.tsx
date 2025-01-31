@@ -16,8 +16,10 @@ import font from "../../../../shared/modules/Typography.module.css";
 import styles from "../../../../shared/modules/Button.module.css";
 import data from "./data";
 import arrow from "../../../../assets/arrow-blue.png";
+import { useNavigate } from "react-router-dom";
 
 const Info = () => {
+  const navigate = useNavigate();
   return (
     <Container mt={100}>
       {data.map((item, index) => (
@@ -60,6 +62,7 @@ const Info = () => {
                   ))}
                 </List>
                 <Button
+                  onClick={() => navigate("/prices")}
                   size="md"
                   className={`${styles.ButtonOutline} ${font.ButtonBody}`}
                 >
