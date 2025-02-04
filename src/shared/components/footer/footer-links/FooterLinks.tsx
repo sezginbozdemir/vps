@@ -101,12 +101,18 @@ const FooterLinks = () => {
         </Grid.Col>
         <Grid.Col span={{ base: 12, xs: 12, sm: 5 }}>
           <Group align="end" justify="end" gap={15}>
-            <Text className={`${font.Detail} ${css.Copyright} ${css.Link}`}>
+            <Link
+              to="/terms"
+              className={`${font.Detail} ${css.Copyright} ${css.Link}`}
+            >
               Termeni și Condiții
-            </Text>
-            <Text className={`${font.Detail} ${css.Copyright} ${css.Link}`}>
-              Politica de Cookies
-            </Text>
+            </Link>
+            <Link
+              to="/confidentiality"
+              className={`${font.Detail} ${css.Copyright} ${css.Link}`}
+            >
+              Politica de Confidențialitate
+            </Link>
           </Group>
         </Grid.Col>
       </Grid>

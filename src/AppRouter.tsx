@@ -6,6 +6,8 @@ import Vps from "./solutions/vps/Vps";
 import AdditionalSpace from "./solutions/additional-space/AdditionalSpace";
 import Prices from "./prices/Prices";
 import Contact from "./contact/Contact";
+import Terms from "./terms/Terms";
+import Confidentiality from "./confidentiality/Confidentiality";
 
 const AppRouter = () => {
   return (
@@ -17,6 +19,8 @@ const AppRouter = () => {
         <Route path="/additional-space" element={<AdditionalSpace />} />
         <Route path="/prices" element={<Prices />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/confidentiality" element={<Confidentiality />} />
       </Routes>
       <Footer />
     </BrowserRouter>

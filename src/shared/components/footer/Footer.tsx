@@ -6,10 +6,12 @@ import { useLocation } from "react-router-dom";
 
 const Footer = () => {
   const location = useLocation();
-
+  const hideFullFooter = ["/contact", "/terms", "/confidentiality"].includes(
+    location.pathname
+  );
   return (
     <>
-      {location.pathname === "/contact" ? (
+      {hideFullFooter ? (
         <FooterLinks />
       ) : (
         <>
