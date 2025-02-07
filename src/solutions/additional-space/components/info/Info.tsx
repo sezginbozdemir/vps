@@ -28,7 +28,6 @@ const Info = () => {
               <Text className={`${font.T2} ${css.BottomTitle}`}>
                 {item.title}
                 <span className={css.BottomTitleSpan}>{item.titleSpan}</span>
-                text-align: ;center
               </Text>
               <Text w="70%" className={`${font.Body} ${css.BottomDescription}`}>
                 {item.description}
