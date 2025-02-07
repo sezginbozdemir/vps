@@ -11,7 +11,6 @@ This project is built with **TypeScript**, **Mantine UI**, and **CSS Modules** t
 - **Built with TypeScript** for type safety
 - **Mantine UI** fully customizable components for an elegant interface
 - **CSS Modules** for scoped styles
--
 
 ## Screenshots
 
