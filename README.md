@@ -16,7 +16,7 @@ This project is built with **TypeScript**, **Mantine UI**, and **CSS Modules** t
 
 ![Screenshot](public/screenshots/1.png)
 
-![Screenshot](public/screenshots/2.png)
+![Screenshot](public/screenshots/3.png)
 
 ## Installation
 
