@@ -19,14 +19,14 @@ import graph from "../../../assets/graph.png";
 const Intro = () => {
   return (
     <Box className={css.Box}>
-      <Image src={cloud} className={css.FloatCloud} />
-      <Image src={cloud} className={css.FloatCloud2} />
-      <Image src={shield} className={css.FloatShield2} />
-      <Image src={shield} className={css.FloatShield} />
-      <Image src={lightning} className={css.FloatLightning} />
-      <Image src={lightning} className={css.FloatLightning2} />
-      <Image src={graph} className={css.FloatGraph} />
-      <Image src={graph} className={css.FloatGraph2} />
+      <Image src={cloud} loading="eager" className={css.FloatCloud} />
+      <Image src={cloud} loading="eager" className={css.FloatCloud2} />
+      <Image src={shield} loading="eager" className={css.FloatShield2} />
+      <Image src={shield} loading="eager" className={css.FloatShield} />
+      <Image src={lightning} loading="eager" className={css.FloatLightning} />
+      <Image src={lightning} loading="eager" className={css.FloatLightning2} />
+      <Image src={graph} loading="eager" className={css.FloatGraph} />
+      <Image src={graph} loading="eager" className={css.FloatGraph2} />
 
       <Container size={1100} className={css.Container}>
         <Stack justify="space-between" gap={500}>
